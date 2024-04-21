@@ -7,11 +7,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center bg-gray-900 mx-auto">
       <div>
-        <img
-          src={logo}
-          alt="ashutosh sahoo"
-          className="w-8 sm:w-10 md:w-14 m-2 mx-4"
-        />
+        <img src={logo} alt="AS" className="w-8 sm:w-10 md:w-14 m-2 mx-4" />
       </div>
       {!menuOpen && (
         <div onClick={() => setMenuOpen(true)}>

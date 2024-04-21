@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 @keyframes menuSlideIn {
   0% {
     transform: translateX(100%);
