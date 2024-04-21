@@ -5,6 +5,7 @@ import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <About />
       <TechStack />
+      <Projects />
       <SocialLinks />
       <Footer />
     </div>
