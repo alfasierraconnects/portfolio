@@ -5,26 +5,34 @@ import "react-toastify/dist/ReactToastify.css";
 const GetInTouch = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    if (
+      event.target.name.value.trim() !== "" &&
+      event.target.email.value.trim() !== "" &&
+      event.target.message.value.trim() !== ""
+    ) {
+      const formData = new FormData(event.target);
 
-    formData.append("access_key", "b74727bc-561d-47f5-bfd0-25c733679e36");
+      formData.append("access_key", "b74727bc-561d-47f5-bfd0-25c733679e36");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (data.success) {
-      event.target.reset();
-      toast.success("Message sent successfully. Thank You!");
+      if (data.success) {
+        event.target.reset();
+        toast.success("Message sent successfully. Thank You!");
+      } else {
+        toast.error("Error sending Message. Pardon me!");
+      }
     } else {
-      toast.error("Error sending Message. Pardon me!");
+      toast.error("Incomplete Information");
     }
   };
   return (
-    <div className="text-gray-300 mt-16 my-10">
+    <div id="contactMe" className="text-gray-300 mt-16 my-10">
       <ToastContainer />
       <h4 className="text-xl underline underline-offset-4 decoration-blue-400 font-semibold text-center">
         Get in touch with me

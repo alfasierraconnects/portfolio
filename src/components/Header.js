@@ -3,7 +3,7 @@ import profileImg from "../logos/profileImg.png";
 
 const Header = () => {
   return (
-    <div className="container my-10 px-5 mx-auto">
+    <div id="home" className="container py-10 px-5 mx-auto">
       <div className="text-gray-300 flex flex-col gap-4 items-center">
         <img
           src={profileImg}
@@ -24,7 +24,19 @@ const Header = () => {
             Namaste! I'm Ashutosh Sahoo,
             <br />
           </span>
-          frontend developer based in India.
+          frontend developer based in{" "}
+          <span
+            style={{
+              backgroundImage:
+                "linear-gradient(to bottom,#ea580c,#fff ,#4d7c0f)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            India
+          </span>
+          .
         </h2>
         <h4 className="text-center text-lg sm:text-xl sm:px-10">
           I craft user-friendly & visually appealing web applications providing
@@ -32,10 +44,10 @@ const Header = () => {
         </h4>
         <div className="flex flex-col sm:flex-row gap-4 text-lg sm:text-xl mt-4">
           <button className="p-2 px-4 bg-gradient-to-br from-pink-600 to-cyan-700 rounded-md hover:ring-2 active:ring-cyan-500 shadow-md ring-pink-400 ring-inset">
-            Connect with me
+            <a href="#contactMe">Connect with me</a>
           </button>
           <button className="p-2 px-4 rounded-md ring-2 ring-gray-300 active:ring-cyan-500 hover:ring-pink-400 shadow-md ring-inset">
-            My resume
+            <a href="#myResume">My resume</a>
           </button>
         </div>
       </div>

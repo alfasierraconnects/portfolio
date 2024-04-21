@@ -19,7 +19,10 @@ const Resume = () => {
   };
 
   return (
-    <div className="text-gray-300 mt-16 my-10 flex flex-col justify-center">
+    <div
+      id="myResume"
+      className="text-gray-300 mt-16 my-10 flex flex-col justify-center"
+    >
       <h4 className="text-xl underline underline-offset-4 decoration-blue-400 font-semibold text-center">
         My resume
       </h4>

@@ -3,7 +3,10 @@ import screenshot from "../logos/Screenshot 2024-04-21 161133.jpg";
 
 const Projects = () => {
   return (
-    <div className="text-gray-300 font-semibold flex flex-col items-center mt-16 my-10 mx-auto">
+    <div
+      id="myProjects"
+      className="text-gray-300 font-semibold flex flex-col items-center mt-16 my-10 mx-auto"
+    >
       <h4 className="text-xl underline underline-offset-4 decoration-blue-400">
         My Latest Work
       </h4>
