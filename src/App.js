@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
+import GetInTouch from "./components/GetInTouch";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <TechStack />
       <Projects />
+      <GetInTouch />
       <SocialLinks />
       <Footer />
     </div>
