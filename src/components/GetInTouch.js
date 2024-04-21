@@ -36,7 +36,7 @@ const GetInTouch = () => {
           className="rounded-md bg-cyan-100 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
           required
           cols="30"
-          rows="10"
+          rows="5"
         ></textarea>
         <button
           type="submit"
