@@ -1,15 +1,19 @@
 import React from "react";
-import HTMLLogo from "../logos/HTML5.png";
-import CSSLogo from "../logos/CSS3.png";
-import Javascript from "../logos/JavaScript-logo.png";
-import Java from "../logos/java-logo.png";
-import reactLogo from "../logos/React-logo.png";
-import routerLogo from "../logos/react-router-logo.png";
-import appwriteLogo from "../logos/appwrite-logo.png";
-import gitLogo from "../logos/git-logo.png";
-import tailwindLogo from "../logos/tailwind-logo.png";
-import axiosLogo from "../logos/axios-logo.png";
-import postmanLogo from "../logos/postman-logo.png";
+import { SiAppwrite } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { SiReactrouter } from "react-icons/si";
+import { SiHtml5 } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiAxios } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 const TechStack = () => {
   return (
@@ -17,32 +21,36 @@ const TechStack = () => {
       <h2 className="text-xl underline underline-offset-4 decoration-blue-400 font-semibold text-center">
         Techstack I use:
       </h2>
-      <div className="grid grid-cols-3 sm:grid-cols-2 gap-y-4  gap-2 items-center  my-6 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[55%] xl:w-[45%] mx-auto">
-        <p className="col-span-1">Laguages:</p>
-        <div className="col-span-2 sm:col-span-1 flex gap-6 h-10">
-          <img src={HTMLLogo} alt="HTML" />
-          <img src={CSSLogo} alt="CSS" />
-          <img src={Javascript} alt="Javascript" />
-          <img src={Java} alt="Java" />
+      <div className="grid grid-cols-2 gap-y-4  gap-2 items-center my-6 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[55%] xl:w-[45%] mx-auto">
+        <p>Laguages:</p>
+        <div className="flex items-center text-3xl gap-6 h-10">
+          <SiHtml5 />
+          <SiCss3 />
+          <SiJavascript />
+          <FaJava />
         </div>
 
-        <p className="col-span-1">Frameworks & Libraraies:</p>
-        <div className="col-span-2 sm:col-span-1 flex items-center gap-6 h-10">
-          <img src={reactLogo} alt="React" className="h-8" />
-          <img src={routerLogo} alt="react router" className="h-8" />
-          <img src={tailwindLogo} alt="Tailwind" className="h-6" />
+        <p>Frameworks & Libraraies:</p>
+        <div className="flex items-center text-3xl gap-6 h-10">
+          <FaReact />
+          <SiTailwindcss />
+          <RiNextjsLine />
+          <SiRedux />
         </div>
 
-        <p className="col-span-1">Backend & Database:</p>
-        <div className="col-span-2 sm:col-span-1 flex items-center gap-6 h-10">
-          <img src={appwriteLogo} alt="Appwrite" className="h-14" />
+        <p>Backend & Database:</p>
+        <div className="flex items-center text-3xl gap-6 h-10">
+          <SiAppwrite />
+          <SiMongodb />
+          <FaNodeJs />
         </div>
 
-        <p className="col-span-1">Other Tools:</p>
-        <div className="col-span-2 sm:col-span-1 flex items-center gap-6 h-10">
-          <img src={gitLogo} alt="Git" className="h-8" />
-          <img src={axiosLogo} alt="Axios" className="h-4" />
-          <img src={postmanLogo} alt="Axios" className="h-8" />
+        <p>Other Tools:</p>
+        <div className="flex items-center text-3xl gap-6 h-10">
+          <SiPostman />
+          <SiAxios />
+          <SiReactrouter />
+          <FaGithub />
         </div>
       </div>
     </div>

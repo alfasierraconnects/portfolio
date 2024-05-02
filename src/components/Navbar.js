@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../logos/ashutosh-sahoo-favicon-color.png";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,8 +21,8 @@ const Navbar = () => {
       </div>
       {!menuOpen && (
         <div onClick={() => setMenuOpen(true)}>
-          <p className="open-menu text-cyan-800 lg:hidden mr-4">
-            <ion-icon size="large" name="reorder-three-outline"></ion-icon>
+          <p className="open-menu text-cyan-800 text-3xl lg:hidden mr-4">
+            <IoMenu />
           </p>
         </div>
       )}
@@ -28,9 +30,9 @@ const Navbar = () => {
         <div className="fixed z-50 top-0 right-0 menu-list flex flex-col gap-2 bg-gray-900 text-gray-300 rounded-bl-lg font-medium text-lg p-4 animate-menuSlideIn">
           <p
             onClick={() => setMenuOpen(false)}
-            className="open-menu text-cyan-800 fixed top-1 right-1"
+            className="open-menu text-cyan-800 text-3xl fixed top-1 right-1"
           >
-            <ion-icon size="large" name="close-outline"></ion-icon>
+            <IoClose />
           </p>
           <p className="hover:text-pink-200 active:text-cyan-300">
             <a href="#home">Home</a>

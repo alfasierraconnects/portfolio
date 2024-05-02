@@ -22,3 +22,24 @@ body {
 .animate-menuSlideIn {
   animation: menuSlideIn 0.5s forwards;
 }
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon-container:hover .icon {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.text {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-container:hover .text {
+  opacity: 1;
+}

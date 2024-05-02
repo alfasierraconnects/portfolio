@@ -1,6 +1,8 @@
 import React from "react";
-import leetcode from "../logos/leetcode.png";
-import naukri from "../logos/Naukri-logo.png";
+import { SiCodingninjas } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
+import { TbBrandGithub } from "react-icons/tb";
 
 const SocialLinks = () => {
   return (
@@ -9,42 +11,50 @@ const SocialLinks = () => {
         Find me on
       </h4>
       <p className="mt-6">Feel free to connect with me</p>
-      <div className="flex justify-around my-4 text-black gap-4">
-        <div className="hover:translate-y-1 hover:scale-105 transition">
+      <div className="flex gap-10 my-4 text-black text-2xl">
+        <div className="icon-container relative">
           <a
             href="https://github.com/alfasierraconnects"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ion-icon size="large" name="logo-github"></ion-icon>
+            <TbBrandGithub className="icon" />
+            <span className="text text-sm">GitHub</span>
           </a>
         </div>
 
-        <div className="hover:translate-y-1 hover:scale-105 transition">
+        <div className="icon-container relative">
           <a
             href="https://www.linkedin.com/in/ashutosh-sahoo-0a2456284/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+            <FaLinkedinIn className="icon" />
+            <span className="text text-sm">LinkedIn</span>
           </a>
         </div>
-        <div className="hover:translate-y-1 hover:scale-105 transition">
+
+        <div className="icon-container relative">
           <a
             href="https://leetcode.com/alfasierraconnects/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={leetcode} alt="leetcode" width="30" />
+            <SiLeetcode className="icon" />
+            <span className="text text-sm">LeetCode</span>
           </a>
         </div>
-        <div className="hover:translate-y-1 hover:scale-105 transition">
+
+        <div className="icon-container relative">
           <a
             href="https://www.naukri.com/code360/profile/8cdeec2b-bf8d-4ebd-8c41-958b59da92fe"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={naukri} alt="leetcode" width="30" />
+            <SiCodingninjas className="icon" />
+            <span className="text text-sm whitespace-nowrap">
+              Coding Ninjas
+            </span>
           </a>
         </div>
       </div>
