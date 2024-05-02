@@ -11,7 +11,7 @@ const SocialLinks = () => {
         Find me on
       </h4>
       <p className="mt-6">Feel free to connect with me</p>
-      <div className="flex gap-10 my-4 text-black text-2xl">
+      <div className="flex gap-10 my-4 text-gray-200 text-2xl">
         <div className="icon-container relative">
           <a
             href="https://github.com/alfasierraconnects"

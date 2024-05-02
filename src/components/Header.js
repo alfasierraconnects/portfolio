@@ -1,14 +1,14 @@
 import React from "react";
-import profileImg from "../logos/profileImg.png";
+import profileImg from "../assests/profileImg.png";
 
 const Header = () => {
   return (
     <div id="home" className="container py-10 px-5 mx-auto">
-      <div className="text-gray-300 flex flex-col gap-4 items-center">
+      <div className="text-gray-300 flex flex-col gap-4 items-center animate-fadeIn">
         <img
           src={profileImg}
           alt="Ashutosh"
-          className=" bg-cyan-900 rounded-full w-[40%] sm:w-[20%] sm:my-5"
+          className=" bg-cyan-900 bg-opacity-50 rounded-full w-[40%] sm:w-[20%] sm:my-5"
         />
 
         <h2 className=" text-3xl sm:text-4xl text-center font-semibold">

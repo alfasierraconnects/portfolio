@@ -1,10 +1,10 @@
 import React from "react";
-import shopper from "../logos/Shopper-screenshot.png";
-import vartalap from "../logos/Vartalap-screenshot.png";
-import tomato from "../logos/tomato-screenshot.png";
-import expensetracker from "../logos/expense-tracker-screenshot.png";
-import omnifood from "../logos/omnifood-screenshot.png";
-import todos from "../logos/nextjs-todo-screenshot.png";
+import shopper from "../assests/Shopper-screenshot.png";
+import vartalap from "../assests/Vartalap-screenshot.png";
+import tomato from "../assests/tomato-screenshot.png";
+import expensetracker from "../assests/expense-tracker-screenshot.png";
+import omnifood from "../assests/omnifood-screenshot.png";
+import todos from "../assests/nextjs-todo-screenshot.png";
 import { SiAppwrite } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";

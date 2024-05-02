@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../logos/ashutosh-sahoo-favicon-color.png";
+import logo from "../assests/ashutosh-sahoo-favicon-color.png";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   }, [menuOpen]);
 
   return (
-    <div className="flex justify-between items-center bg-gray-900 mx-auto">
+    <div className="flex justify-between items-center bg-transparent mx-auto">
       <div>
         <img src={logo} alt="AS" className="w-8 sm:w-10 md:w-14 m-2 mx-4" />
       </div>

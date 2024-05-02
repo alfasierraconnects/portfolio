@@ -48,7 +48,7 @@ const GetInTouch = () => {
           type="text"
           name="name"
           placeholder="Enter your name here"
-          className="rounded-md bg-cyan-100 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
+          className="rounded-md bg-cyan-50 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
           required
         />
         <label className="sm:mt-6 font-medium" htmlFor="email">
@@ -58,7 +58,7 @@ const GetInTouch = () => {
           type="email"
           name="email"
           placeholder="Enter your emailID here"
-          className="rounded-md bg-cyan-100 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
+          className="rounded-md bg-cyan-50 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
           required
         />
         <label className="sm:mt-6 font-medium" htmlFor="message">
@@ -67,7 +67,7 @@ const GetInTouch = () => {
         <textarea
           name="message"
           placeholder="Type your message here"
-          className="rounded-md bg-cyan-100 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
+          className="rounded-md bg-cyan-50 p-2 my-2 text-cyan-900 font-medium outline-none focus:ring-4 ring-cyan-700"
           required
           cols="30"
           rows="5"
